@@ -1,10 +1,15 @@
 import React from 'react';
 import './App.scss';
+import Chat from './Chat';
+import Sidebar from './Sidebar';
 
 function App() {
   return (
-    <div>
-      <h1>This is Our WhatsApp frontend</h1>
+    <div className="app">
+      <div className="app_body">
+        <Sidebar />
+        <Chat />
+      </div>
     </div>
   );
 }
